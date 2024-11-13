@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>북치기 - 계정 삭제 요청</title>
+    <style>
+        :root {
+            --primary-color: #7C3AED;
+            --primary-hover: #6D28D9;
+            --background-color: #F5F3FF;
+            --text-color: #1F2937;
+            --border-color: #E5E7EB;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+            padding: 24px;
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 16px;
+            font-size: 1.5em;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .contact-box {
+            background-color: #F3F4F6;
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .warning {
+            background-color: #FEF2F2;
+            color: #991B1B;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 24px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .warning::before {
+            content: "⚠️";
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 16px;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: var(--primary-hover);
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #6B7280;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px;
+                margin: 20px auto;
+            }
+
+            .section {
+                padding: 16px;
+            }
+
+            h1 {
+                font-size: 1.75em;
+            }
+
+            h2 {
+                font-size: 1.25em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <!-- 앱 아이콘 이미지 URL로 교체 -->
+            <img src="앱 아이콘 URL" alt="내 작은 서재 로고">
+        </div>
+        
+        <h1>북치기 계정 삭제 요청</h1>
+        
+        <div class="section">
+            <h2>계정 삭제 안내</h2>
+            <p>계정 삭제를 원하시는 경우, 아래의 이메일로 다음 정보와 함께 요청해 주시기 바랍니다.</p>
+            
+            <ul>
+                <li><strong>필수 정보</strong>
+                    <ul>
+                        <li>앱에서 사용중인 이메일 주소</li>
+                        <li>계정 탈퇴 요청 확인 문구: "계정 삭제에 동의합니다"</li>
+                    </ul>
+                </li>
+                <li><strong>선택 정보</strong>
+                    <ul>
+                        <li>탈퇴 사유</li>
+                        <li>서비스 개선을 위한 피드백</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>처리 절차 및 유의사항</h2>
+            <ul>
+                <li>요청 접수 후 <strong>3영업일 이내</strong>에 처리됩니다.</li>
+                <li>처리가 완료되면 확인 이메일을 보내드립니다.</li>
+                <li>삭제된 계정 정보와 데이터는 복구가 불가능합니다.</li>
+                <li>등록하신 도서 정보와 관련 데이터가 모두 삭제됩니다.</li>
+            </ul>
+
+            <div class="warning">
+                계정 삭제 시 모든 데이터는 영구적으로 삭제되며 복구할 수 없습니다.
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h2>계정 삭제 요청하기</h2>
+            <p>아래 이메일로 계정 삭제 요청을 보내주세요:</p>
+            <a href="mailto:teracokr@gmail.com" class="button">
+                이메일로 삭제 요청
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 북치기. All rights reserved.</p>
+    </footer>
+</body>
+</html>
